@@ -37,10 +37,30 @@ print(eye);
 
 # Reshape function
 
-s=one.reshape(5,10);
-print(s)
+#s=one.reshape(5,10);
+#print(s)
 
+o=np.linspace(0,7,10)
 
+#print(o)
+
+r=o.resize(2,5)
+print(r)
+
+# Generating random numbers
+
+print(np.random.rand(3,2))
+
+print(np.random.randn(3,3))
+
+print(np.random.randint(2,20,10))
+
+myint=np.random.randint(2,10,30)
+print(myint)
+
+myint[myint>7]=10
+
+print(myint)
 
 
 
