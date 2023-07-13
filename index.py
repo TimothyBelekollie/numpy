@@ -6,6 +6,7 @@ Created on Mon Jun 26 15:35:10 2023
 """
 
 import numpy as np
+import pandas as pd
 
 m=[1,2,3,4]
 v=np.array(m)
@@ -58,9 +59,29 @@ print(np.random.randint(2,20,10))
 myint=np.random.randint(2,10,30)
 print(myint)
 
+#broadcasting
+
 myint[myint>7]=10
 
 print(myint)
+
+# how to create a copy of a dataset
+
+myint2=myint
+
+myint3=myint2.copy()
+
+data=pd.read_csv('products.csv');
+
+#print(data.head());
+
+my_copy=data.copy();
+print(my_copy.head());
+
+
+
+
+
 
 
 
